@@ -1,0 +1,80 @@
+{
+  "description": "Manifest of reference repositories cloned as siblings to arcon/. Not tracked as git submodules by design (see docs/ARCON_MASTER_PLAN.md) -- these are read-only reference material for Arcon's design work, not Arcon dependencies. Run scripts/clone-reference-repos.sh on a new machine to restore them at the same relative paths.",
+  "generated_at": "2026-09-06",
+  "excluded_local_items": [
+    {
+      "path": ".github/modernize/java-upgrade/",
+      "note": "Unrelated GitHub Copilot app-modernization tooling scaffolding found in this home directory on the original machine. Not part of Arcon or the reference-repo research. Intentionally excluded from git via .gitignore; not present on fresh clones."
+    },
+    {
+      "path": ".claude/",
+      "note": "Session-internal state (e.g. scheduled_tasks.lock), not project content. Excluded via .gitignore."
+    }
+  ],
+  "repos": [
+    {
+      "dir": "autoskills",
+      "url": "https://github.com/midudev/autoskills.git",
+      "branch": "main",
+      "commit": "0ec725320d2137253ab2e68e7ba8a072148e741a",
+      "last_commit_date": "2026-07-17",
+      "license": "CC-BY-NC-4.0",
+      "note": "Non-commercial license -- clean-room pattern port only, no code/data reuse."
+    },
+    {
+      "dir": "copilot-sdk",
+      "url": "https://github.com/github/copilot-sdk.git",
+      "branch": "main",
+      "commit": "d3755535869e97d2bcf5aa6a5b8c35de79f5a7d8",
+      "last_commit_date": "2026-09-04"
+    },
+    {
+      "dir": "deepagents",
+      "url": "https://github.com/langchain-ai/deepagents.git",
+      "branch": "main",
+      "commit": "6c89fe2197a2dfe4f3851cda38565bcadba6066b",
+      "last_commit_date": "2026-09-05",
+      "license": "MIT"
+    },
+    {
+      "dir": "everything-claude-code",
+      "url": "https://github.com/affaan-m/everything-claude-code.git",
+      "branch": "main",
+      "commit": "e04ea0b9cc8248686edf5ac751cadff550e162b8",
+      "last_commit_date": "2026-09-03",
+      "license": "MIT"
+    },
+    {
+      "dir": "onyx",
+      "url": "https://github.com/onyx-dot-app/onyx.git",
+      "branch": "main",
+      "commit": "76f69d08eb677bbfa8611dc448f9b9aa6d1898f4",
+      "last_commit_date": "2026-04-25",
+      "license": "MIT (enterprise carve-outs under ee/)"
+    },
+    {
+      "dir": "openclaude",
+      "url": "https://github.com/Gitlawb/openclaude.git",
+      "branch": "main",
+      "commit": "0abfca30e5a2945678415f5328691584387720fb",
+      "last_commit_date": "2026-09-06",
+      "license": "Not clean MIT -- derived from proprietary Claude Code without Anthropic authorization; only modifications are MIT-licensed. Design reference only, never copy code."
+    },
+    {
+      "dir": "superpowers",
+      "url": "https://github.com/obra/superpowers.git",
+      "branch": "main",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "last_commit_date": "2026-08-12",
+      "license": "MIT"
+    },
+    {
+      "dir": "graphify",
+      "url": "https://github.com/Graphify-Labs/graphify.git",
+      "branch": "v8",
+      "commit": "c9f99018774e2e0380e9f65b3959944559a0d5f6",
+      "last_commit_date": "2026-09-05",
+      "note": "PyPI package name is graphifyy (double-y); pin ==0.9.55 per docs/GRAPHIFY_ANALYSIS.md."
+    }
+  ]
+}

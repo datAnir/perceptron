@@ -1,0 +1,62 @@
+# Untracked local scaffolding, not part of Arcon or the reference-repo research.
+# (GitHub Copilot app-modernization tooling leftover from unrelated work in this
+# home directory; present on the original machine but intentionally not synced.)
+/.github/
+
+# Session-internal state, not project content.
+/.claude/
+
+# Reference repos are cloned as siblings but NOT tracked here.
+# Restore them with: ./scripts/clone-reference-repos.sh
+# See REPOS.json for exact commit pins this workspace's docs were written against.
+/autoskills/
+/copilot-sdk/
+/deepagents/
+/everything-claude-code/
+/onyx/
+/openclaude/
+/superpowers/
+/graphify/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Env / secrets
+.env
+*.pem
+*.key
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
